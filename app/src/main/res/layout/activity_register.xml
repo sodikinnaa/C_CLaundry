@@ -4,7 +4,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    tools:context=".RegisterActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtPassword"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="271dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="70dp"
+        android:hint="Password"
+        android:textColorHint="#A7A7A7"
+        app:boxStrokeColor="#EAEAEE"
+        app:endIconMode="password_toggle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPassword">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputPassword"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:textColor="#5B5B5B"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:ignore="TouchTargetSizeCheck" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/txtUsername"
@@ -48,34 +75,24 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/inputPassword"
+            android:id="@+id/pw2"
             android:layout_width="match_parent"
             android:layout_height="55dp"
             android:textColor="#5B5B5B"
             android:textSize="15sp"
             android:textStyle="bold"
             tools:ignore="TouchTargetSizeCheck" />
+
+
+
     </com.google.android.material.textfield.TextInputLayout>
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="271dp"
-        android:layout_height="55dp"
-        android:text="LOGIN"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
     <Button
         android:id="@+id/button4"
         android:layout_width="271dp"
         android:layout_height="55dp"
-        android:text="LOGIN"
+        android:text="Register"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
@@ -83,24 +100,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8"
-        app:layout_constraintVertical_bias="0.482" />
+        app:layout_constraintTop_toTopOf="@+id/txtPassword" />
 
-
-    <Button
-        android:id="@+id/google"
-        android:layout_width="271dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="40dp"
-        android:text="Login With Google"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.442"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
     <TextView
         android:id="@+id/textView4"
         android:layout_width="139dp"
@@ -108,7 +109,7 @@
         android:layout_marginStart="70dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="283dp"
-        android:text="Don't have account?"
+        android:text="already have account?"
         android:textColor="#A7A7A7"
         android:textSize="13sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -123,7 +124,7 @@
         android:layout_marginStart="7dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="68dp"
-        android:text="Create a new account"
+        android:text="Login"
         android:textColor="#3BA8BE"
         android:textSize="12sp"
         android:textStyle="bold"
@@ -135,7 +136,7 @@
         android:id="@+id/textView7"
         android:layout_width="286dp"
         android:layout_height="66dp"
-        android:text="MASUK"
+        android:text="BUAT AKUN"
         android:textAlignment="center"
         android:textColor="#4E4E4E"
         android:textSize="24sp"
@@ -147,26 +148,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.407" />
 
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="228dp"
-        android:layout_marginTop="6dp"
-        android:layout_marginEnd="70dp"
-        android:text="Forgot Password?"
-        android:textColor="#3BA8BE"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtPassword" />
 
-    <TextView
-        android:id="@+id/atau"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Or"
-        app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/google" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
