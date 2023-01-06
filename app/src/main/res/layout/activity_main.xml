@@ -10,11 +10,11 @@
         android:id="@+id/tvSweet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
         android:lineSpacingExtra="12dp"
-        android:text="Home Sweet Home"
+        android:text="CC Laundry"
         android:textAlignment="center"
         android:textColor="#3E4993"
         android:textSize="22sp"
@@ -26,11 +26,11 @@
         android:id="@+id/tvSweetSub"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
         android:lineSpacingExtra="12dp"
-        android:text="19,209 Available"
+        android:text="Bandar Lampung"
         android:textAlignment="center"
         android:textColor="#D5D5D5"
         android:textSize="18sp"
@@ -163,18 +163,18 @@
                     android:id="@+id/tvItemOne"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="La Fo Granite"
-                    android:textColor="#3E4993"
                     android:layout_marginTop="10dp"
+                    android:text="Sodikin"
+                    android:textColor="#3E4993"
                     android:textSize="18sp" />
 
                 <TextView
                     android:id="@+id/tvItemPriceOne"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="$ 80,309"
-                    android:textColor="#D5D5D5"
                     android:layout_marginTop="4dp"
+                    android:text="RP.10000"
+                    android:textColor="#D5D5D5"
                     android:textSize="18sp" />
 
             </LinearLayout>
@@ -266,7 +266,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="Corner Dante"
+                    android:text="Aldo"
                     android:textColor="#3E4993"
                     android:textSize="18sp" />
 
@@ -275,7 +275,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
-                    android:text="$ 23,309"
+                    android:text="RP. 20000"
                     android:textColor="#D5D5D5"
                     android:textSize="18sp" />
 
@@ -358,7 +358,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="Apartement X"
+                    android:text="Willy"
                     android:textColor="#3E4993"
                     android:textSize="18sp" />
 
@@ -367,7 +367,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
-                    android:text="$ 50,309"
+                    android:text="RP.30000"
                     android:textColor="#D5D5D5"
                     android:textSize="18sp" />
 
@@ -406,5 +406,15 @@
             android:background="#F2F2F2" />
 
     </LinearLayout>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tambah Data"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemThree" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
